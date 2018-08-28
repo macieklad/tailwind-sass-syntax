@@ -1,0 +1,39 @@
+{
+  "fileTypes": [],
+  "injectionSelector": "source.css.scss, source.css.sass",
+  "scopeName": "source.css.tailwind",
+  "patterns": [
+    {
+      "include": "#at_rule_tailwind"
+    },
+    {
+      "include": "#at_rule_apply"
+    }
+  ],
+  "repository": {
+    "at_rule_tailwind": {
+      "begin": "\\s*((@)tailwind)\\s*",
+      "end": "(\\n|;)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.at-rule"
+        },
+        "2": {
+          "name": "punctuation.definition.keyword"
+        }
+      }
+    },
+    "at_rule_apply": {
+      "begin": "\\s*((@)apply)\\s*",
+      "end": "(\\n|;)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.at-rule"
+        },
+        "2": {
+          "name": "punctuation.definition.keyword"
+        }
+      }
+    }
+  }
+}

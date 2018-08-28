@@ -1,0 +1,47 @@
+{
+    "name": "tailwind-sass-syntax",
+    "displayName": "tailwind-sass-syntax",
+    "description": "Tailwind syntax highlighting for css and sass",
+    "version": "1.0.0",
+    "publisher": "Maciej Ładoś",
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.sayHello"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.sayHello",
+                "title": "Hello World"
+            }
+        ],
+        "grammars": [
+            {
+                "injectTo": [
+                    "source.css.scss",
+                    "source.css.sass"
+                ],
+                "scopeName": "source.css.tailwind",
+                "path": "./syntaxes/tailwind.tmLanguage.json"
+            }
+        ]        
+    },
+    
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "eslint": "^4.11.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    }
+}
