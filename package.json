@@ -1,9 +1,13 @@
 {
     "name": "tailwind-sass-syntax",
-    "displayName": "tailwind-sass-syntax",
+    "displayName": "Tailwind sass syntax",
     "description": "Tailwind syntax highlighting for css and sass",
-    "version": "1.0.0",
-    "publisher": "Maciej Ładoś",
+    "version": "1.0.1",
+    "publisher": "macieklad",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/macieklad/tailwind-sass-syntax.git"
+    },
     "engines": {
         "vscode": "^1.26.0"
     },
