@@ -16,19 +16,19 @@
       "end": "(\\n|;)",
       "beginCaptures": {
         "1": {
-          "name": "keyword.control.at-rule"
+          "name": "keyword.control.at-rule.tailwind.tailwind"
         },
         "2": {
           "name": "punctuation.definition.keyword"
         }
       }
     },
-    "at_rule_apply": {
+    "at_rule_responsive": {
       "begin": "\\s*((@)apply)\\s*",
       "end": "(\\n|;)",
       "beginCaptures": {
         "1": {
-          "name": "keyword.control.at-rule"
+          "name": "keyword.control.at-rule.responsive.tailwind"
         },
         "2": {
           "name": "punctuation.definition.keyword"
