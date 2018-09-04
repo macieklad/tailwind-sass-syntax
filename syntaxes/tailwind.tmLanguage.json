@@ -7,7 +7,16 @@
       "include": "#at_rule_tailwind"
     },
     {
+      "include": "#at_rule_responsive"
+    },
+    {
       "include": "#at_rule_apply"
+    },
+    {
+      "include": "#at_rule_screen"
+    },
+    {
+      "include": "#at_rule_variants"
     }
   ],
   "repository": {
@@ -17,6 +26,18 @@
       "beginCaptures": {
         "1": {
           "name": "keyword.control.at-rule.tailwind.tailwind"
+        },
+        "2": {
+          "name": "punctuation.definition.keyword"
+        }
+      }
+    },
+    "at_rule_apply": {
+      "begin": "\\s*((@)responsive)\\s*",
+      "end": "(\\n|;)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.at-rule.apply.tailwind"
         },
         "2": {
           "name": "punctuation.definition.keyword"
@@ -34,6 +55,39 @@
           "name": "punctuation.definition.keyword"
         }
       }
+    },
+    "at_rule_screen": {
+      "begin": "((@)screen)\\s*(\\w+)\\s*",
+      "end": "({)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.at-rule.screen.tailwind"
+        },
+        "2": {
+          "name": "punctuation.definition.keyword"
+        }, 
+        "3": {
+          "name": "entity.name.screen.tailwind"
+        }
+      }
+    },
+    "at_rule_variants": {
+      "begin": "\\s*((@)variants)\\s*",
+      "end": "({)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.at-rule"
+        },
+        "2": {
+          "name": "punctuation.definition.keyword"
+        }
+      },
+      "patterns": [
+        {
+          "match": "\\s*(\\w+)\\s*",
+          "name": "entity.name.variant.tailwind"
+        }
+      ]
     }
   }
 }
