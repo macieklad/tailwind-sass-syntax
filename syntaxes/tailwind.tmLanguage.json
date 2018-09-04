@@ -33,7 +33,7 @@
       }
     },
     "at_rule_apply": {
-      "begin": "\\s*((@)responsive)\\s*",
+      "begin": "\\s*((@)apply)\\s*",
       "end": "(\\n|;)",
       "beginCaptures": {
         "1": {
@@ -45,7 +45,7 @@
       }
     },
     "at_rule_responsive": {
-      "begin": "\\s*((@)apply)\\s*",
+      "begin": "\\s*((@)responsive)\\s*",
       "end": "(\\n|;)",
       "beginCaptures": {
         "1": {
@@ -58,7 +58,7 @@
     },
     "at_rule_screen": {
       "begin": "((@)screen)\\s*(\\w+)\\s*",
-      "end": "({)",
+      "end": "(\\n|{)",
       "beginCaptures": {
         "1": {
           "name": "keyword.control.at-rule.screen.tailwind"
@@ -73,10 +73,10 @@
     },
     "at_rule_variants": {
       "begin": "\\s*((@)variants)\\s*",
-      "end": "({)",
+      "end": "(\\n|{)",
       "beginCaptures": {
         "1": {
-          "name": "keyword.control.at-rule"
+          "name": "keyword.control.at-rule.variants.tailwind"
         },
         "2": {
           "name": "punctuation.definition.keyword"
