@@ -2,17 +2,18 @@
     "name": "tailwind-sass-syntax",
     "displayName": "Tailwind sass syntax",
     "description": "Tailwind syntax highlighting for css and sass",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "publisher": "macieklad",
     "repository": {
         "type": "git",
         "url": "https://github.com/macieklad/tailwind-sass-syntax.git"
     },
+    "icon": "./icon.png",
     "engines": {
         "vscode": "^1.26.0"
     },
     "categories": [
-        "Other"
+        "Formatters", "Other"
     ],
     "activationEvents": [
         "onCommand:extension.sayHello"
@@ -22,7 +23,7 @@
         "commands": [
             {
                 "command": "extension.sayHello",
-                "title": "Hello World"
+                "title": "Activation"
             }
         ],
         "grammars": [
