@@ -40,7 +40,8 @@
     
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
+        "test": "node ./node_modules/vscode/bin/test",
+        "publish": "vsce publish"
     },
     "devDependencies": {
         "typescript": "^2.6.1",
