@@ -17,3 +17,7 @@ Simple extension that adds tailwind grammar rules for scss and sass files to all
 - Better keyword scope naming in grammar 
 - Support for all tailwind directives
 - Some typo fixing and better marketplace tags + extension icon
+
+### 1.1.1
+
+- Fixed content coloring inside tailwind rules

@@ -21,8 +21,8 @@
   ],
   "repository": {
     "at_rule_tailwind": {
-      "begin": "\\s*((@)tailwind)\\s*",
-      "end": "(\\n|;)",
+      "begin": "\\s*((@)tailwind)",
+      "end": "\\s*(\\n|;)",
       "beginCaptures": {
         "1": {
           "name": "keyword.control.at-rule.tailwind.tailwind"
@@ -33,8 +33,8 @@
       }
     },
     "at_rule_apply": {
-      "begin": "\\s*((@)apply)\\s*",
-      "end": "(\\n|;)",
+      "begin": "\\s*((@)apply)",
+      "end": "\\s*(\\n|;)",
       "beginCaptures": {
         "1": {
           "name": "keyword.control.at-rule.apply.tailwind"
@@ -45,8 +45,8 @@
       }
     },
     "at_rule_responsive": {
-      "begin": "\\s*((@)responsive)\\s*",
-      "end": "(\\n|;)",
+      "begin": "\\s*((@)responsive)",
+      "end": "\\s*(?={)",
       "beginCaptures": {
         "1": {
           "name": "keyword.control.at-rule.responsive.tailwind"
@@ -57,8 +57,8 @@
       }
     },
     "at_rule_screen": {
-      "begin": "((@)screen)\\s*(\\w+)\\s*",
-      "end": "(\\n|{)",
+      "begin": "((@)screen)\\s*(\\w+)",
+      "end": "\\s*(?={)",
       "beginCaptures": {
         "1": {
           "name": "keyword.control.at-rule.screen.tailwind"
@@ -72,8 +72,8 @@
       }
     },
     "at_rule_variants": {
-      "begin": "\\s*((@)variants)\\s*",
-      "end": "(\\n|{)",
+      "begin": "\\s*((@)variants)",
+      "end": "\\s*(?={)",
       "beginCaptures": {
         "1": {
           "name": "keyword.control.at-rule.variants.tailwind"
