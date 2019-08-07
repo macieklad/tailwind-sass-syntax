@@ -13,7 +13,8 @@
         "vscode": "^1.26.0"
     },
     "categories": [
-        "Formatters", "Other"
+        "Formatters",
+        "Other"
     ],
     "activationEvents": [
         "onCommand:extension.sayHello"
@@ -35,9 +36,8 @@
                 "scopeName": "source.css.tailwind",
                 "path": "./syntaxes/tailwind.tmLanguage.json"
             }
-        ]        
+        ]
     },
-    
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "node ./node_modules/vscode/bin/test",
