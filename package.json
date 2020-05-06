@@ -2,7 +2,7 @@
     "name": "tailwind-sass-syntax",
     "displayName": "Tailwind sass syntax",
     "description": "Tailwind syntax highlighting for sass",
-    "version": "1.1.1",
+    "version": "1.2.1",
     "publisher": "macieklad",
     "repository": {
         "type": "git",
