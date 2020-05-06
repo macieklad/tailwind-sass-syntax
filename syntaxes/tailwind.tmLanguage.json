@@ -42,7 +42,17 @@
         "2": {
           "name": "punctuation.definition.keyword"
         }
-      }
+      },
+      "patterns": [
+        {
+          "match": "(?=\\S*['-])([a-zA-Z'-]+)",
+          "name": "entity.name.utility.tailwind"
+        },
+        {
+          "match": "\\w+",
+          "name": "entity.name.utility.tailwind"
+        }
+      ]
     },
     "at_rule_responsive": {
       "begin": "\\s*((@)responsive)",

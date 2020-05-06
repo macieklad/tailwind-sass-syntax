@@ -1,0 +1,19 @@
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
+@tailwind base;
+
+/* Input */
+@variants hover, focus {
+  .banana {
+    color: yellow;
+  }
+}
+
+@responsive {
+  .bg-gradient-brand {
+    @apply font-bold py-2 px-4 rounded;
+    background-image: linear-gradient(blue, green);
+  }
+}
