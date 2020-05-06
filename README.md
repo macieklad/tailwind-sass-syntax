@@ -11,3 +11,10 @@ Example for stylelint:
 "scss.validate": false
 ```
 
+## Contributing and development
+Install packages, and launch vscode in the directory. After that follow the instructions provided within
+vscode developer guides [here](https://code.visualstudio.com/api/get-started/your-first-extension). When you are ready, create a pull request
+so we can discuss it (as the extension is simple, there is no template for contributions, feel free to write anything). Inside the ``test`` directory there is a sample file with tailwind directives, to test the extension on.
+```bash
+npm install && code ./
+```

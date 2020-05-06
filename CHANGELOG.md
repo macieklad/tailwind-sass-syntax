@@ -17,3 +17,7 @@
 ### 1.1.1
 
 - Fixed content coloring inside tailwind rules
+
+### 1.2.1
+
+- Added coloring to utilities after @apply keyword
