@@ -17,6 +17,9 @@
     },
     {
       "include": "#at_rule_variants"
+    },
+    {
+      "include": "#at_rule_layer"
     }
   ],
   "repository": {
@@ -75,7 +78,7 @@
         },
         "2": {
           "name": "punctuation.definition.keyword"
-        }, 
+        },
         "3": {
           "name": "entity.name.screen.tailwind"
         }
@@ -98,6 +101,21 @@
           "name": "entity.name.variant.tailwind"
         }
       ]
+    },
+    "at_rule_layer": {
+      "begin": "((@)layer)\\s*(\\w+)",
+      "end": "\\s*(?={)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.at-rule.layer.tailwind"
+        },
+        "2": {
+          "name": "punctuation.definition.keyword"
+        },
+        "3": {
+          "name": "entity.name.layer.tailwind"
+        }
+      }
     }
   }
 }
