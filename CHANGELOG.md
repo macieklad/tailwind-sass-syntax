@@ -21,3 +21,7 @@
 ### 1.2.1
 
 - Added coloring to utilities after @apply keyword
+
+### 1.3.0
+
+- Added @layer directive support, thanks to [@rellafella](https://github.com/rellafella)
