@@ -17,3 +17,9 @@
     background-image: linear-gradient(blue, green);
   }
 }
+
+@layer base {
+  p {
+    @apply text-black;
+  }
+}
