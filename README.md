@@ -1,3 +1,6 @@
+> **Warning**
+> This project is not actively maintained and is kept for legacy reasons. Use the official vscode tailwind extension
+
 # tailwind-sass-syntax
 
 Simple extension that adds tailwind grammar rules for scss and sass files to allow for framework directives syntax highlighting.
